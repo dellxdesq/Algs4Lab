@@ -1,0 +1,60 @@
+﻿<Window x:Class="Algs4Lab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:algs4lab="clr-namespace:Algs4Lab" d:DataContext="{d:DesignInstance Type=algs4lab:Model}"
+         mc:Ignorable="d"
+        Title="SortAlgorithms" Height="500" Width="1070" ResizeMode="NoResize">
+    <Grid Background="#FF5097A9">
+        <Canvas x:Name="canvas" Grid.Row="0" Margin="177,79,276,39" />
+        <TextBox x:Name="permutationsTextBox" Height="194" Width="245" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="799,10,0,0" IsReadOnly="True" Background="#FFEAECEF" Foreground="#FF1B0E0E" BorderBrush="#FF0D1A42"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,27,0,0" Height="47" RenderTransformOrigin="0.5,0.486" Width="497">
+            <Button Content="Создать массив" Command="{Binding ArrayButton}" Background="#FFC4E211" Foreground="#FF0E0101" BorderBrush="#2E2E2E" BorderThickness="1" Padding="10" Height="31" Width="145" FontWeight="Bold" FontSize="14">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#5E5E5E" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <ComboBox x:Name="sortComboBox" Width="188" Foreground="Black" Background="White" BorderBrush="#2E2E2E" BorderThickness="1" Height="27" FontWeight="Bold">
+                <ComboBoxItem Content="Выберите сортировку:" IsSelected="True"/>
+                <ComboBoxItem Content="Bubble Sort"/>
+                <ComboBoxItem Content="Select Sort"/>
+                <ComboBoxItem Content="Merge Sort"/>
+                <ComboBoxItem Content="Heap Sort"/>
+            </ComboBox>
+            <Button Content="Начать сортировку" Command="{Binding SortButton}" Background="#FFC4E211" Foreground="#FF100101" BorderBrush="#2E2E2E" BorderThickness="1" Padding="10" Width="163" RenderTransformOrigin="0.519,0.523" Height="30" FontSize="14" FontWeight="Bold">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#5E5E5E" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="799,212,0,0" Height="47" RenderTransformOrigin="0.5,0.486" Width="245">
+            <Slider x:Name="speedSlider" Minimum="0.001" Maximum="100" Value="50" TickFrequency="1" IsSnapToTickEnabled="True" Width="249" Height="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
