@@ -12,12 +12,19 @@ namespace alglab3
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Выберите номер задания:");
+            string start = Console.ReadLine();
+            switch (start)
+            {
+                case "1":
+                    Run2Task();
+                    break;
+                case "2":
+                    Run3Task();
+                    break;
+            }
 
 
-            
-            Run2Task();
-
-            
         }
         
         static void Run2Task()
