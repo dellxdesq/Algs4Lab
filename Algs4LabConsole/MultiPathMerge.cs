@@ -244,14 +244,14 @@ namespace Alg4Lab
                                     if (Convert.ToInt64(FormatInputNum(element1.Split(";")[indexKey])) < Convert.ToInt64(FormatInputNum(element3.Split(";")[indexKey])))
                                     {
                                         Thread.Sleep(delay);
-                                        Console.WriteLine($"Добовляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                        Console.WriteLine($"Добавляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                         WriteToFile(writer1, writer2, writer3, element1);
                                         picked1 = false;
                                     }
                                     else
                                     {
                                         Thread.Sleep(delay);
-                                        Console.WriteLine($"Добовляем {element3} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                        Console.WriteLine($"Добавляем {element3} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                         WriteToFile(writer1, writer2, writer3, element3);
                                         picked3 = false;
                                     }
@@ -259,7 +259,7 @@ namespace Alg4Lab
                                 else
                                 {
                                     Thread.Sleep(delay);
-                                    Console.WriteLine($"Добовляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                    Console.WriteLine($"Добавляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                     WriteToFile(writer1, writer2, writer3, element1);
                                     picked1 = false;
                                 }
@@ -271,14 +271,14 @@ namespace Alg4Lab
                                     if (Convert.ToInt64(FormatInputNum(element2.Split(";")[indexKey])) < Convert.ToInt64(FormatInputNum(element3.Split(";")[indexKey])))
                                     {
                                         Thread.Sleep(delay);
-                                        Console.WriteLine($"Добовляем {element2} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                        Console.WriteLine($"Добавляем {element2} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                         WriteToFile(writer1, writer2, writer3, element2);
                                         picked2 = false;
                                     }
                                     else
                                     {
                                         Thread.Sleep(delay);
-                                        Console.WriteLine($"Добовляем {element3} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                        Console.WriteLine($"Добавляем {element3} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                         WriteToFile(writer1, writer2, writer3, element3);
                                         picked3 = false;
                                     }
@@ -286,7 +286,7 @@ namespace Alg4Lab
                                 else
                                 {
                                     Thread.Sleep(delay);
-                                    Console.WriteLine($"Добовляем {element2} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                    Console.WriteLine($"Добавляем {element2} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                     WriteToFile(writer1, writer2, writer3, element2);
                                     picked2 = false;
                                 }
@@ -297,14 +297,14 @@ namespace Alg4Lab
                             if (Convert.ToInt64(FormatInputNum(element1.Split(";")[indexKey])) < Convert.ToInt64(FormatInputNum(element3.Split(";")[indexKey])))
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                Console.WriteLine($"Добавляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                 WriteToFile(writer1, writer2, writer3, element1);
                                 picked1 = false;
                             }
                             else
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {element3} из файла \"{c}.txt\" в файл \"{curFile}.txt\".");
+                                Console.WriteLine($"Добавляем {element3} из файла \"{c}.txt\" в файл \"{curFile}.txt\".");
                                 WriteToFile(writer1, writer2, writer3, element3);
                                 picked3 = false;
                             }
@@ -312,7 +312,7 @@ namespace Alg4Lab
                         else
                         {
                             Thread.Sleep(delay);
-                            Console.WriteLine($"Добовляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                            Console.WriteLine($"Добавляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                             WriteToFile(writer1, writer2, writer3, element1);
                             picked1 = false;
                         }
@@ -324,14 +324,14 @@ namespace Alg4Lab
                             if (Convert.ToInt64(FormatInputNum(element2.Split(";")[indexKey])) < Convert.ToInt64(FormatInputNum(element3.Split(";")[indexKey])))
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {element2} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
+                                Console.WriteLine($"Добавляем {element2} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
                                 WriteToFile(writer1, writer2, writer3, element2);
                                 picked2 = false;
                             }
                             else
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {element3} из файла \"{c}.txt\" в файл \"{curFile}.txt\".");
+                                Console.WriteLine($"Добавляем {element3} из файла \"{c}.txt\" в файл \"{curFile}.txt\".");
                                 WriteToFile(writer1, writer2, writer3, element3);
                                 picked3 = false;
                             }
@@ -339,7 +339,7 @@ namespace Alg4Lab
                         else
                         {
                             Thread.Sleep(delay);
-                            Console.WriteLine($"Добовляем {element2} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
+                            Console.WriteLine($"Добавляем {element2} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
                             WriteToFile(writer1, writer2, writer3, element2);
                             picked2 = false;
                         }
@@ -347,7 +347,7 @@ namespace Alg4Lab
                     else if (picked3)
                     {
                         Thread.Sleep(delay);
-                        Console.WriteLine($"Добовляем {element3} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
+                        Console.WriteLine($"Добавляем {element3} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
                         WriteToFile(writer1, writer2, writer3, element3);
                         picked3 = false;
                     }
@@ -435,14 +435,14 @@ namespace Alg4Lab
                                     if (needToReOrder(element1, element3) == false)
                                     {
                                         Thread.Sleep(delay);
-                                        Console.WriteLine($"Добовляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                        Console.WriteLine($"Добавляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                         WriteToFile(writer1, writer2, writer3, element1);
                                         picked1 = false;
                                     }
                                     else
                                     {
                                         Thread.Sleep(delay);
-                                        Console.WriteLine($"Добовляем {element3} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                        Console.WriteLine($"Добавляем {element3} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                         WriteToFile(writer1, writer2, writer3, element3);
                                         picked3 = false;
                                     }
@@ -450,7 +450,7 @@ namespace Alg4Lab
                                 else
                                 {
                                     Thread.Sleep(delay);
-                                    Console.WriteLine($"Добовляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                    Console.WriteLine($"Добавляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                     WriteToFile(writer1, writer2, writer3, element1);
                                     picked1 = false;
                                 }
@@ -462,14 +462,14 @@ namespace Alg4Lab
                                     if (needToReOrder(element2, element3) == false)
                                     {
                                         Thread.Sleep(delay);
-                                        Console.WriteLine($"Добовляем {element2} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                        Console.WriteLine($"Добавляем {element2} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                         WriteToFile(writer1, writer2, writer3, element2);
                                         picked2 = false;
                                     }
                                     else
                                     {
                                         Thread.Sleep(delay);
-                                        Console.WriteLine($"Добовляем {element3} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                        Console.WriteLine($"Добавляем {element3} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                         WriteToFile(writer1, writer2, writer3, element3);
                                         picked3 = false;
                                     }
@@ -477,7 +477,7 @@ namespace Alg4Lab
                                 else
                                 {
                                     Thread.Sleep(delay);
-                                    Console.WriteLine($"Добовляем {element2} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                    Console.WriteLine($"Добавляем {element2} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                     WriteToFile(writer1, writer2, writer3, element2);
                                     picked2 = false;
                                 }
@@ -488,14 +488,14 @@ namespace Alg4Lab
                             if (needToReOrder(element1, element3) == false)
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                                Console.WriteLine($"Добавляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                                 WriteToFile(writer1, writer2, writer3, element1);
                                 picked1 = false;
                             }
                             else
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {element3} из файла \"{c}.txt\" в файл \"{curFile}.txt\".");
+                                Console.WriteLine($"Добавляем {element3} из файла \"{c}.txt\" в файл \"{curFile}.txt\".");
                                 WriteToFile(writer1, writer2, writer3, element3);
                                 picked3 = false;
                             }
@@ -503,7 +503,7 @@ namespace Alg4Lab
                         else
                         {
                             Thread.Sleep(delay);
-                            Console.WriteLine($"Добовляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
+                            Console.WriteLine($"Добавляем {element1} из файла \"{a}.txt\" в файл \"{curFile}.txt\".");
                             WriteToFile(writer1, writer2, writer3, element1);
                             picked1 = false;
                         }
@@ -515,14 +515,14 @@ namespace Alg4Lab
                             if (needToReOrder(element2, element3) == false)
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {element2} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
+                                Console.WriteLine($"Добавляем {element2} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
                                 WriteToFile(writer1, writer2, writer3, element2);
                                 picked2 = false;
                             }
                             else
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {element3} из файла \"{c}.txt\" в файл \"{curFile}.txt\".");
+                                Console.WriteLine($"Добавляем {element3} из файла \"{c}.txt\" в файл \"{curFile}.txt\".");
                                 WriteToFile(writer1, writer2, writer3, element3);
                                 picked3 = false;
                             }
@@ -530,7 +530,7 @@ namespace Alg4Lab
                         else
                         {
                             Thread.Sleep(delay);
-                            Console.WriteLine($"Добовляем {element2} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
+                            Console.WriteLine($"Добавляем {element2} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
                             WriteToFile(writer1, writer2, writer3, element2);
                             picked2 = false;
                         }
@@ -538,7 +538,7 @@ namespace Alg4Lab
                     else if (picked3)
                     {
                         Thread.Sleep(delay);
-                        Console.WriteLine($"Добовляем {element3} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
+                        Console.WriteLine($"Добавляем {element3} из файла \"{b}.txt\" в файл \"{curFile}.txt\".");
                         WriteToFile(writer1, writer2, writer3, element3);
                         picked3 = false;
                     }

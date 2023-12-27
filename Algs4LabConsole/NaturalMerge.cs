@@ -192,14 +192,14 @@ namespace Alg4Lab
                             if (Convert.ToInt64(FormatInputNum(a.Split(";")[indexKey])) < Convert.ToInt64(FormatInputNum(b.Split(";")[indexKey])))
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {a} из файла \"a.txt\" в файл \"{file}\".");
+                                Console.WriteLine($"Добавляем {a} из файла \"a.txt\" в файл \"{file}\".");
                                 sr.WriteLine(a);
                                 pickedA = false;
                             }
                             else
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {b} из файла \"b.txt\" в файл \"{file}\".");
+                                Console.WriteLine($"Добавляем {b} из файла \"b.txt\" в файл \"{file}\".");
                                 sr.WriteLine(b);
                                 pickedB = false;
                             }
@@ -207,7 +207,7 @@ namespace Alg4Lab
                         else
                         {
                             Thread.Sleep(delay);
-                            Console.WriteLine($"Добовляем {a} из файла \"a.txt\" в файл \"{file}\".");
+                            Console.WriteLine($"Добавляем {a} из файла \"a.txt\" в файл \"{file}\".");
                             sr.WriteLine(a);
                             pickedA = false;
                         }
@@ -215,7 +215,7 @@ namespace Alg4Lab
                     else if (pickedB)
                     {
                         Thread.Sleep(delay);
-                        Console.WriteLine($"Добовляем {b} из файла \"b.txt\" в файл \"{file}\".");
+                        Console.WriteLine($"Добавляем {b} из файла \"b.txt\" в файл \"{file}\".");
                         sr.WriteLine(b);
                         pickedB = false;
                     }
@@ -273,14 +273,14 @@ namespace Alg4Lab
                             if (needToReOrder(elementA, elementB) == false)
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {elementA} из файла \"a.txt\" в файл \"{file}\".");
+                                Console.WriteLine($"Добавляем {elementA} из файла \"a.txt\" в файл \"{file}\".");
                                 sr.WriteLine(elementA);
                                 pickedA = false;
                             }
                             else
                             {
                                 Thread.Sleep(delay);
-                                Console.WriteLine($"Добовляем {elementB} из файла \"b.txt\" в файл \"{file}\".");
+                                Console.WriteLine($"Добавляем {elementB} из файла \"b.txt\" в файл \"{file}\".");
                                 sr.WriteLine(elementB);
                                 pickedB = false;
                             }
@@ -288,7 +288,7 @@ namespace Alg4Lab
                         else
                         {
                             Thread.Sleep(delay);
-                            Console.WriteLine($"Добовляем {elementA} из файла \"a.txt\" в файл \"{file}\".");
+                            Console.WriteLine($"Добавляем {elementA} из файла \"a.txt\" в файл \"{file}\".");
                             sr.WriteLine(elementA);
                             pickedA = false;
                         }
@@ -296,7 +296,7 @@ namespace Alg4Lab
                     else if (pickedB)
                     {
                         Thread.Sleep(delay);
-                        Console.WriteLine($"Добовляем {elementB} из файла \"b.txt\" в файл \"{file}\".");
+                        Console.WriteLine($"Добавляем {elementB} из файла \"b.txt\" в файл \"{file}\".");
                         sr.WriteLine(elementB);
                         pickedB = false;
                     }

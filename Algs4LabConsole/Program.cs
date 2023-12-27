@@ -12,15 +12,12 @@ namespace alglab3
     {
         static void Main(string[] args)
         {
+
+
             
             Run2Task();
-            //List<string> str = new List<string>();
-            //str.Add("aah");
-            //str.Add("abp");
-            //str.Add("aaa");
 
-
-            //Algorithms.BubbleSort(Checker.GetWordsList());
+            
         }
         
         static void Run2Task()
@@ -47,15 +44,15 @@ namespace alglab3
             switch (sortOption)
             {
                 case "1":
-                    TableSorts ts = new TableSorts(@"C:\Users\Dell\Desktop\countries.txt", keyIndex, delay, attributeName, attributeValue);
+                    TableSorts ts = new TableSorts("tables/countries.txt", keyIndex, delay, attributeName, attributeValue);
                     ts.DirectSort();
                     break;
                 case "2":
-                    NaturalSort ns = new NaturalSort(@"C:\Users\Dell\Desktop\countries.txt", keyIndex, delay, attributeName, attributeValue);
+                    NaturalSort ns = new NaturalSort("tables/countries.txt", keyIndex, delay, attributeName, attributeValue);
                     ns.Sort();
                     break;
                 case "3":
-                    MultipathMergeSort ms = new MultipathMergeSort(@"C:\Users\Dell\Desktop\countries.txt", keyIndex, delay, attributeName, attributeValue);
+                    MultipathMergeSort ms = new MultipathMergeSort("tables/countries.txt", keyIndex, delay, attributeName, attributeValue);
                     ms.Sort();
                     break;
                 default:
@@ -63,7 +60,7 @@ namespace alglab3
                     break;
             }
         }
-        void Run3Task()
+        static void Run3Task()
         {
             List<string> list = new List<string>();
             list.Add("a");
