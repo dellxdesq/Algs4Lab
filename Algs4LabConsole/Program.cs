@@ -29,7 +29,7 @@ namespace alglab3
         
         static void Run2Task()
         {
-            Console.WriteLine("Выберите желаемый метод сортировки (1 - прямое, 2 - естественное, 3 - многопутевое.)");
+            Console.WriteLine("Выберите желаемый метод сортировки (1 - прямой, 2 - естественный, 3 - многопутевой.)");
             string sortOption = Console.ReadLine();
 
             Console.WriteLine($"Возможные атрибуты: {DataWorker.GetAttributesFromFile("tables/header.txt")} ");
@@ -81,24 +81,24 @@ namespace alglab3
             Console.WriteLine("------");
             PyramidSort.Sorting(list);
 
-            //int n = 1;
-            //while (n <= 11)
-            //{
-            //    for (int i = 0; i < 5; i++)
-            //    {
-            //        //Algorithms.BubbleSort(Checker.GetWordsList(n));
-            //        //Algorithms.InsertionSort(Checker.GetWordsList(n));  ////исключила
-            //        PyramidSorting.Sorting(Checker.GetWordsList(n));
-            //    }
-            //    Checker.GetAverageTime();
-            //    n++;
+            int n = 1;
+            while (n <= 11)
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    Algorithms.BubbleSort(Checker.GetWordsList(n));
+                    Algorithms.InsertionSort(Checker.GetWordsList(n));
+                    PyramidSort.Sorting(Checker.GetWordsList(n));
+                }
+                Checker.GetAverageTime();
+                n++;
 
-            //}
-            //foreach (var item in Checker.ResultTime)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //Checker.ResultTime.Clear();
+            }
+            foreach (var item in Checker.ResultTime)
+            {
+                Console.WriteLine(item);
+            }
+            Checker.ResultTime.Clear();
         }
     }
 }

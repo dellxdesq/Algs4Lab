@@ -62,9 +62,9 @@ namespace Algs4Lab
             int[] leftIndices = new int[n1];
             int[] rightIndices = new int[n2];
 
-            var highlightColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB841")); // Красный
-            var defaultColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#755D9A")); // Синий
-            var sortedColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#2E8B57")); // Зеленый
+            var highlightColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB841")); 
+            var defaultColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#755D9A"));
+            var sortedColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#2E8B57")); 
 
             for (int i = 0; i < n1; ++i)
             {
@@ -148,21 +148,26 @@ namespace Algs4Lab
             Logs clear = new();
             int n = Generator.ArraySize;
 
+            // Определение переменных для цветов
+            var redColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB841"));
+            var blueColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#755D9A"));
+            var greenColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#2E8B57"));
+
             for (int i = 0; i < n - 1; i++)
             {
                 int minIndex = i;
 
-                Generator.Rectangles[minIndex].Fill = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB841")); // Red
+                Generator.Rectangles[minIndex].Fill = redColor; // Red
 
                 for (int j = i + 1; j < n; j++)
                 {
-                    Generator.Rectangles[j].Fill = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB841")); // Red
+                    Generator.Rectangles[j].Fill = redColor; // Red
 
                     if (GetHeight(Generator.Rectangles[j]) < GetHeight(Generator.Rectangles[minIndex]))
                     {
-                        Generator.Rectangles[minIndex].Fill = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#755D9A")); // Blue
+                        Generator.Rectangles[minIndex].Fill = blueColor; // Blue
                         minIndex = j;
-                        Generator.Rectangles[minIndex].Fill = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB841")); // Red
+                        Generator.Rectangles[minIndex].Fill = redColor; // Red
                     }
 
                     await Task.Delay(50); // Задержка по необходимости
@@ -171,10 +176,10 @@ namespace Algs4Lab
                 await SwapAsync(i, minIndex);
                 Logs l = new(i, minIndex);
 
-                Generator.Rectangles[i].Fill = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#2E8B57")); // Green
+                Generator.Rectangles[i].Fill = greenColor; // Green
             }
 
-            Generator.Rectangles[n - 1].Fill = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#2E8B57")); // Green
+            Generator.Rectangles[n - 1].Fill = greenColor; // Green
         }
 
         public async Task HeapSortAnimationAsync()
@@ -182,17 +187,15 @@ namespace Algs4Lab
             Logs clear = new();
             int n = Generator.ArraySize;
 
-            var highlightColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB841")); // Красный
-            var defaultColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#755D9A")); // Синий
-            var sortedColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#2E8B57")); // Зеленый
+            var highlightColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFB841")); 
+            var defaultColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#755D9A")); 
+            var sortedColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#2E8B57")); 
 
-            // Построение кучи (Heapify)
             for (int i = n / 2 - 1; i >= 0; i--)
             {
                 await HeapifyAsync(n, i, highlightColor, defaultColor);
             }
-
-            // Извлечение элементов из кучи
+      
             for (int i = n - 1; i > 0; i--)
             {
                 await SwapAsync(0, i);
